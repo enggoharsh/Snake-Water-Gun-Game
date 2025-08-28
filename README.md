@@ -1,91 +1,55 @@
-🎮 Snake-Water-Gun Game (Flask Web App)
+# 🎮 Snake-Water-Gun Game (Flask)
 
-This is a fun Snake-Water-Gun game built using Python (Flask) and deployed on Render.
-Play directly in your browser without installing anything!
+This is a simple **Snake-Water-Gun game** built with **Flask** and deployed on **Render**.  
+Play it online 👉 [Snake-Water-Gun Game](https://snake-water-gun-game-907x.onrender.com)
 
-🔗 Live Demo: Snake-Water-Gun Game
+---
 
-🚀 Features
+## 🐍 Rules of the Game
+- **Snake vs Water → Snake drinks water → Snake wins 🐍**
+- **Water vs Gun → Gun drowns in water → Water wins 💧**
+- **Gun vs Snake → Gun shoots snake → Gun wins 🔫**
 
-Play the classic Snake-Water-Gun game against the computer.
+If both choose the same option → It's a **Draw** ⚖️
 
-Simple and interactive web interface.
+---
 
-Flask backend with Python logic.
+## 🚀 How to Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/snake-water-gun-game.git
+   cd snake-water-gun-game
+2. Create a virtual environment & activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # For Linux/Mac
+   venv\Scripts\activate      # For Windows
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the Flask app:
+   ```bash
+   python app.py
+5. Open Your Browser
+   ```bash
+   http://127.0.0.1:5000/
+## 🌍 Deployment
 
-Hosted online using Render.
-
-🛠️ Tech Stack
-
-Python 3
-
-Flask (Web framework)
-
-Gunicorn (WSGI server for production)
-
-HTML / CSS (Frontend UI)
-
-Render (Hosting platform)
-
-📂 Project Structure
-├── app.py             # Flask application
-├── templates/         # HTML files (frontend)
-│   └── index.html
-├── static/            # CSS / JS (if any)
-├── requirements.txt   # Python dependencies
-└── Procfile           # For Render deployment
-
-⚙️ Installation (Run Locally)
-
-Clone the repository:
-
-git clone https://github.com/your-username/snake-water-gun-game.git
-cd snake-water-gun-game
-
-
-Create a virtual environment and activate it:
-
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run the Flask app:
-
-python app.py
-
-
-Open in browser:
-
-http://127.0.0.1:5000/
-
-🌍 Deployment (on Render)
-
-Push your project to GitHub.
-
-Create a new Web Service on Render
-.
-
-Connect your GitHub repo.
-
-Add a Procfile with:
-
+- **This project is deployed using Render.**
+-**Procfile:**
+ ```bash
 web: gunicorn app:app
+📂 Project Structure
+├── app.py           # Flask app code
+├── requirements.txt # Dependencies
+├── Procfile         # For Render deployment
+└── README.md        # Project documentation
 
+-**🙌 Contribution
 
-Add a requirements.txt (with Flask + Gunicorn at minimum):
-
-Flask
-gunicorn
-
-
-Deploy! 🚀
+Feel free to fork this repo, add new features (like score tracking, styling, or multiplayer), and create a pull request 🚀
 
 📜 License
 
 This project is licensed under the MIT License.
+
